@@ -15,6 +15,7 @@ namespace DataAccessLayer
 
     public class DALContextInit : DropCreateDatabaseIfModelChanges<BlogDbContext> 
     {
+
         protected override void Seed(BlogDbContext context)
         {
             context.AdminInfo.Add(new AdminInfo { EmailId = "vikram@admin.com", Password = "1234" });
